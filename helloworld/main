@@ -3,7 +3,8 @@
 import argparse
 import sys
 import helloworld
-from . import main
+
+import main
 
 parser = argparse.ArgumentParser(
     description='A simple example program to print a friendly greeting.'
