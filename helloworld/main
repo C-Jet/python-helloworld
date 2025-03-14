@@ -1,10 +1,6 @@
-"""Top-level implementation of the helloworld program."""
-
 import argparse
 import sys
-import helloworld
-
-import main
+import helloworld  # Ensure the package is importable
 
 parser = argparse.ArgumentParser(
     description='A simple example program to print a friendly greeting.'
@@ -17,13 +13,7 @@ def main(argv=None):
     if argv is None:
         argv = sys.argv
 
-    # Ensure the script runs correctly with argument parsing
-    parser.parse_args(argv[1:])
+    parser.parse_args(argv[1:])  # Parse CLI arguments
 
     print("Hello, world")
     return 0
-
-
-
-if __name__ == "__main__":
-    main.main()
