@@ -2,8 +2,8 @@
 
 import argparse
 import sys
-
 import helloworld
+from . import main
 
 parser = argparse.ArgumentParser(
     description='A simple example program to print a friendly greeting.'
@@ -22,5 +22,7 @@ def main(argv=None):
     print("Hello, world")
     return 0
 
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    main.main()
